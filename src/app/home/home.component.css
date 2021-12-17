@@ -1,0 +1,12 @@
+.profile-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.changingText p{
+    font-size: 22px;
+    color: var(--deep-font-color);
+}
+.p1{
+    color: var(--deep-active-color);
+}

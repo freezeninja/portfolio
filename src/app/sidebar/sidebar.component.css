@@ -1,0 +1,42 @@
+
+.header{
+    font-size: 18px;
+    color: #3b7013;
+}
+.header p{
+    font-size: 16px;
+}
+.header p a{
+    background-color: rgb(162, 252, 162);
+    padding-left: 0;
+    padding-bottom: 2px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius: 15px;
+}
+.header p a:hover{
+    background: linear-gradient(to left, var(--deep-font-color), var(--deep-active-color));
+    color: white;
+}
+.header p span svg{
+    position: relative;
+    bottom: .1rem;
+}
+.span3{
+    font-weight: bold;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+.side-links a{
+    display: flex;
+    justify-content: space-between;
+}
+.side-links svg{
+    position: relative;
+    bottom: .2rem;
+}
+.sidbarLinksRoute:hover, .sidbarLinksRoute.active{
+    color:var(--deep-active-color);
+}

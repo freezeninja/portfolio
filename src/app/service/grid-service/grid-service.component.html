@@ -1,0 +1,11 @@
+
+<div class="service-card-box mt-4">
+    <div class="card" style="width: 18rem;" *ngFor="let cards of serviceArr">
+        <div class="card-body text-center">
+            <img [src]="cards.icon">
+            <h5 class="card-title">{{ cards.title}}</h5>
+            <p class="card-text">{{ cards.desc }}</p>
+            <a href="#" class="btns">Get More ~</a>
+        </div>
+    </div>
+</div>

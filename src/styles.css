@@ -1,1 +1,30 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~font-awesome/css/font-awesome.css';
+:root{
+    --light-purple-color: #cc7dfd;
+    --extra-light-purple: #ecdbf6;
+    --light-blue-color: #7cc5e7;
+    --deep-font-color: rgb(121, 37, 199);
+    --deep-active-color: rgb(44, 122, 133);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.btns{
+    padding-top: 3px;
+    padding-bottom: 6px;
+    padding-right: 8px;
+    padding-left: 8px;
+    border: none;
+    outline: none;
+    background: linear-gradient(to left, var(--deep-font-color), var(--deep-active-color));
+    text-decoration: none;
+    color: white;
+    border-radius: 6px;
+}
+.btns:hover{
+    color: black;
+    background: linear-gradient(to left, var(--light-purple-color), var(--light-blue-color));
+}
