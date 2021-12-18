@@ -37,3 +37,13 @@
           </svg></span>
     </a>
 </div>
+
+<div class="sidebarDown">
+    <div class="toggleIcon text-center mt-2 mb-3">
+        <img src="assets/img/menu-down.svg" (click)="showDownItem()">
+    </div>
+    <div class="showHideBar" [ngClass]="{active: DownActive}">
+        <app-sidebar-down></app-sidebar-down>
+    </div>
+</div>
+

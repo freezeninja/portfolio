@@ -7,6 +7,7 @@ import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
+import { SidebarDownComponent } from './sidebar/sidebar-down/sidebar-down.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { SidebarComponent } from './sidebar/sidebar.component';
     NavbarComponent,
     NotFoundComponent,
     SidebarComponent,
+    SidebarDownComponent,
   ],
   imports: [
     BrowserModule,

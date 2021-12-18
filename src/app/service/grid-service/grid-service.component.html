@@ -1,11 +1,26 @@
-
 <div class="service-card-box mt-4">
-    <div class="card" style="width: 18rem;" *ngFor="let cards of serviceArr">
+    <div class="card activeCard" [id]="i" style="width: 18rem;" *ngFor="let cards of serviceArr; let i = index">
         <div class="card-body text-center">
             <img [src]="cards.icon">
             <h5 class="card-title">{{ cards.title}}</h5>
             <p class="card-text">{{ cards.desc }}</p>
-            <a href="#" class="btns">Get More ~</a>
+            <button type="button" class="btns" (click)="ClassActive($event)">
+                Read More ~
+            </button>
+            <div class="service-modals">
+                <div class="getMServices">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item list-group-item-info" *ngFor="let more of cards.moreItem">{{ more }}
+                        </li>
+                    </ul>
+                    <div class="service-btns">
+                        <button class="btn btn-danger mt-1 me-4" (click)="ClassNotActive($event)">Close</button>
+                        <button class="btn btn-warning mt-1 hire-btn-ser">
+                            <a routerLink="/hire" class="p-0 m-0">Hire</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>

@@ -1,0 +1,9 @@
+.hireBtn{
+    width: 100%;
+}
+.form-label{
+    color: var(--light-brown-text-color);
+}
+.textbox{
+    color: var(--faded-text-color);
+}

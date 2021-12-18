@@ -1,0 +1,15 @@
+.all-heading{
+    font-size: 19px;
+    color: var(--heading-color);
+    font-weight: bold;
+}
+.per-icon img{
+    max-width: 25px;
+    margin-right: 1.6rem;
+}
+.social-icons{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    align-items: center;
+    justify-content: center;
+}

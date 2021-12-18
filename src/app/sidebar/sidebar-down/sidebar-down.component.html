@@ -1,0 +1,24 @@
+<div class="get-in-touch all-heading mb-3 mt-2">
+    Get In Touch 
+</div>
+
+<div class="row mb-2" *ngFor="let item of GetInTouch">
+    <div class="col-2">
+        <img [src]="item.icon" >
+    </div>
+    <div class="col-10">
+       {{ item.text }}
+    </div>
+</div>
+
+<div class="get-in-touch all-heading mb-3 mt-4">
+    Get Connected
+</div>
+
+<div class="social-icons">
+    <div class="per-icon" *ngFor="let logo of socialLogo">
+        <a [href]="logo.link" target="_blank">
+            <img [src]="logo.Icon" class="img-fluid">
+        </a>
+    </div>
+</div>

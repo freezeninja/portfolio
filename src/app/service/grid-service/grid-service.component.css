@@ -1,3 +1,4 @@
+
 .service-card-box{
     display: grid;
     grid-template-columns: repeat(3, auto);
@@ -9,6 +10,28 @@
     width: 40px;
     margin-bottom: 10px;
 }
+.service-modals{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgb(85, 75, 85,.6);
+    display: none;
+    transition: all .3s ease-in-out;
+}
+.activeCard .service-modals{
+    display: none;
+}
+.activeCard.active .service-modals{
+    display: block;
+}
+.hire-btn-ser a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+
 
 @media(max-width: 1000px){
     .service-card-box{

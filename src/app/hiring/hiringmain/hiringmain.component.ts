@@ -7,8 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HiringmainComponent implements OnInit {
 
+  price:number = 1000;
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  onPriceChange(e: any){
+    let val = e.target.value;
+    this.price = val;
+    console.log(this.price);
+    
   }
 }

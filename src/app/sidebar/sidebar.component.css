@@ -40,3 +40,37 @@ a{
 .sidbarLinksRoute:hover, .sidbarLinksRoute.active{
     color:var(--deep-active-color);
 }
+
+
+/* navbar down  */
+.showHideBar{
+    display: none;
+}
+
+.showHideBar.active{
+    display: block;
+}
+.toggleIcon{
+    display: none;
+}
+.toggleIcon img{
+    width: 26px;
+    cursor: pointer;
+}
+.toggleIcon img:hover{
+    filter: opacity(.5);
+}
+
+
+@media(max-width: 1100px){
+    .toggleIcon{
+        display: block;
+    }
+    .showHideBar{
+        display: block;
+    }
+    
+    .showHideBar.active{
+        display: none;
+    }
+}

@@ -6,6 +6,9 @@
     --light-blue-color: #7cc5e7;
     --deep-font-color: rgb(121, 37, 199);
     --deep-active-color: rgb(44, 122, 133);
+    --faded-text-color: rgb(132, 142, 146);
+    --light-brown-text-color: rgb(33, 94, 68);
+    --heading-color: rgb(126, 51, 76);
 }
 *{
     margin: 0;

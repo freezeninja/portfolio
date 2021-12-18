@@ -1,8 +1,58 @@
-
 <app-fromhome>
     <label name for="validationDefault02" class="form-label">First Name</label>
-    <input type="text" name class="form-control" id="validationDefault02" placeholder="Arijit" >
-    <label lastName for="validationDefault02" class="form-label">Last Name</label>
-    <input type="text" lastName class="form-control" id="validationDefault02" placeholder="Maiti" >
+    <input type="text" name class="form-control" id="validationDefault02" placeholder="Arijit">
 
+    <label lastName for="validationDefault02" class="form-label">Last Name</label>
+    <input type="text" lastName class="form-control" id="validationDefault02" placeholder="Maiti">
+
+    <label for="validationDefaultUsername" userName class="form-label">Email</label>
+    <div class="input-group" userName>
+        <span class="input-group-text" id="inputGroupPrepend2">@</span>
+        <input type="text" class="form-control" id="validationDefaultUsername" aria-describedby="inputGroupPrepend2"
+            placeholder="xyz@gmail.com">
+    </div>
+
+    <label for="validationDefault02" phoneNumber class="form-label">Phone Number</label>
+    <input type="text" phoneNumber class="form-control" id="validationDefault02" placeholder="+91 12345 67890">
+
+
+    <label for="validationDefault04" seclectboxProject class="form-label">Project For ~</label>
+    <select seclectboxProject class="form-select" id="validationDefault04">
+        <option selected>Buisness Purpose</option>
+        <option>Personal Purpose</option>
+    </select>
+
+    <label for="validationDefault04" slctBoxTech class="form-label">Prefered Technology ~</label>
+    <select slctBoxTech class="form-select" id="validationDefault04">
+        <option selected>Discuss on Call</option>
+        <option>Angular</option>
+        <option>React Js</option>
+        <option>React native</option>
+        <option>Plain HTML</option>
+        <option>Wordpress</option>
+    </select>
+
+    <label for="customRange1" PriceRange class="form-label">Budget ~</label>
+    <div class="price-from row" PriceRange>
+        <div class="col-10">
+            <input type="range" class="form-range" (change)="onPriceChange($event)" id="customRange1" min="1000"
+                max="95000">
+        </div>
+        <div class="col-2">
+            <output PriceRange>₹ {{ price }}</output>
+        </div>
+    </div>
+
+    <div class="textbox text-center" texBox>
+        Can't find the preferable amount here? Don't worry , we will discuss on it later; It won't be an issue.
+    </div>
+
+    <div class="form-check" AgreeTerm>
+        <input class="form-check-input" type="checkbox" value="" id="invalidCheck2">
+        <label class="form-check-label" for="invalidCheck2">
+          Agree to terms and conditions
+        </label>
+      </div>
+
+      <button class="hireBtn btns" type="submit" submitButton>Hire Now</button>
 </app-fromhome>

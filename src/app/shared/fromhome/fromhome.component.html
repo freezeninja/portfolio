@@ -1,46 +1,39 @@
-
 <form class="row mt-4" (submit)="onSubmit($event)">
-    <div class="col-lg-3 col-md-2 col-sm-12"></div>
-    <div class="col-lg-6 col-md-8 col-sm-12">
-    <div class="col-md-12 from-cust-gap">
-        <ng-content select="[name]"></ng-content>
+  <div class="col-lg-3 col-md-2 col-sm-12"></div>
+  <div class="col-lg-6 col-md-8 col-sm-12">
+    <div class="col-md-12 from-cust-gap mb-3">
+      <ng-content select="[name]"></ng-content>
     </div>
-    <div class="col-md-12 from-cust-gap">
+    <div class="col-md-12 from-cust-gap mb-3">
       <ng-content select="[lastName]"></ng-content>
     </div>
-    <div class="col-md-12">
-      <label for="validationDefaultUsername" class="form-label">Username</label>
-      <div class="input-group">
-        <span class="input-group-text" id="inputGroupPrepend2">@</span>
-        <input type="text" class="form-control" id="validationDefaultUsername"  aria-describedby="inputGroupPrepend2" >
-      </div>
+    <div class="col-md-12 mb-3">
+      <ng-content select="[userName]"></ng-content>
     </div>
-    <div class="col-md-12">
-      <label for="validationDefault03" class="form-label">City</label>
-      <input type="text" class="form-control" id="validationDefault03" >
+    <div class="col-md-12 mb-3">
+      <ng-content select="[phoneNumber]"></ng-content>
     </div>
-    <div class="col-md-12">
-      <label for="validationDefault04" class="form-label">State</label>
-      <select class="form-select" id="validationDefault04" >
-        <option selected disabled value="">Choose...</option>
-        <option>...</option>
-      </select>
+    <div class="col-md-12 mb-3">
+      <ng-content select="[msg]"></ng-content>
     </div>
-    <div class="col-md-12">
-      <label for="validationDefault05" class="form-label">Zip</label>
-      <input type="text" class="form-control" id="validationDefault05" >
+    <div class="col-md-12 mb-3">
+      <ng-content select="[seclectboxProject]"></ng-content>
     </div>
-    <div class="col-12">
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" >
-        <label class="form-check-label" for="invalidCheck2">
-          Agree to terms and conditions
-        </label>
-      </div>
+    <div class="col-md-12 mb-3">
+      <ng-content select="[slctBoxTech]"></ng-content>
     </div>
-    <div class="col-12 text-center">
-      <button class="btn btn-primary" type="submit">Submit form</button>
+    <div class="col-md-12 mb-3">
+      <ng-content select="[PriceRange]"></ng-content>
     </div>
+    <div class="col-md-12 mb-3">
+      <ng-content select="[texBox]"></ng-content>
     </div>
-    <div class="col-lg-3 col-md-2 col-sm-12"></div>
+    <div class="col-12 mb-3">
+      <ng-content select="[AgreeTerm]"></ng-content>
+    </div>
+    <div class="col-12 mb-4 text-center">
+      <ng-content select="[submitButton]"></ng-content>
+    </div>
+  </div>
+  <div class="col-lg-3 col-md-2 col-sm-12"></div>
 </form>
