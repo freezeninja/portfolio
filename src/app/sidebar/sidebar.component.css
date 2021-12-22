@@ -60,9 +60,15 @@ a{
 .toggleIcon img:hover{
     filter: opacity(.5);
 }
-
+.sidebarWhole{
+    position: sticky;
+    top: 2%;
+}
 
 @media(max-width: 1100px){
+    .sidebarWhole{
+        position: static;
+    }
     .toggleIcon{
         display: block;
     }

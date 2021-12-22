@@ -2,3 +2,6 @@
     color:var(--deep-font-color);
     font-size: 18px;
 }
+.folio-text{
+    color: var(--deep-font-color);
+}

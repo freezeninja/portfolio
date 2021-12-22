@@ -8,10 +8,5 @@ import { Component, OnInit} from '@angular/core';
 export class FromhomeComponent implements OnInit {
   constructor() { }
 
-  ngOnInit(): void {
-  }
-  onSubmit(e: any){
-    e.preventDefault()
-  }
-
+  ngOnInit(): void {}
 }

@@ -1,3 +1,14 @@
 .contact-label{
     color: rgb(15, 53, 85);
 }
+.text-red{
+    color: red;
+}
+.errormsg{
+    font-size: 14px;
+}
+.text-green{
+    color: rgb(13, 146, 13);
+    font-size: 20px;
+    font-weight: bold;
+}

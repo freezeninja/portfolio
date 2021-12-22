@@ -9,6 +9,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { SidebarDownComponent } from './sidebar/sidebar-down/sidebar-down.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,7 +17,7 @@ import { SidebarDownComponent } from './sidebar/sidebar-down/sidebar-down.compon
     NavbarComponent,
     NotFoundComponent,
     SidebarComponent,
-    SidebarDownComponent,
+    SidebarDownComponent
   ],
   imports: [
     BrowserModule,

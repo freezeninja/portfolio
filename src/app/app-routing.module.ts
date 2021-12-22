@@ -10,6 +10,7 @@ const routes: Routes = [
   {path: 'hire', loadChildren: ()=> import('./hiring/hiring.module').then((res)=>res.HiringModule)},
   {path: 'services', loadChildren: ()=>import('./service/service.module').then((res)=>res.ServiceModule)},
   {path: 'contact', loadChildren: ()=>import('./contact/contact.module').then((res)=>res.ContactModule)},
+  {path: 'termsconditions', loadChildren: ()=>import('./tc/t-andc/t-andc.module').then((res)=>res.TAndcModule)},
   {path: '', component: HomeComponent},
   {path: '**', component: NotFoundComponent}
 ];

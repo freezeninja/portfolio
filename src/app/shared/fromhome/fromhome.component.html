@@ -1,4 +1,8 @@
-<form class="row mt-4" (submit)="onSubmit($event)">
+<div class="text-center">
+  <ng-content select="[topText]"></ng-content>
+  <ng-content select="[succesText]"></ng-content>
+</div>
+<form class="row mt-4">
   <div class="col-lg-3 col-md-2 col-sm-12"></div>
   <div class="col-lg-6 col-md-8 col-sm-12">
     <div class="col-md-12 from-cust-gap mb-3">

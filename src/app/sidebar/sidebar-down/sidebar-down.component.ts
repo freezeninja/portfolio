@@ -28,7 +28,7 @@ export class SidebarDownComponent implements OnInit {
     },
     {
       Icon: 'assets/img/instagram.png',
-      link: 'facebook.com'
+      link: 'https://www.instagram.com/_peep_senpai'
     },
     {
       Icon: 'assets/img/linkedin.png',

@@ -20,4 +20,8 @@ export class HiringmainComponent implements OnInit {
     console.log(this.price);
     
   }
+
+  hireFSubmit(e: any){
+    e.preventDefault();
+  }
 }

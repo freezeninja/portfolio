@@ -1,0 +1,26 @@
+.imgRow{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.popUpImg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--extra-light-purple);
+    text-align: center;
+    display: none;
+}
+.popUpImg.displayed{
+    display: block;
+}
+
+.closeImg img{
+    max-width: 40px;
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    padding: 5px;
+    border-radius: 8px;
+}

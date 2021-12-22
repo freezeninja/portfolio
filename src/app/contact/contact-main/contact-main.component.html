@@ -1,15 +1,21 @@
 <app-fromhome>
+    <p class="text-red" topText>{{ toptext }}</p>
+    <p succesText class="text-green">{{ SuccesText }}</p>
+    
     <label name for="validationDefault02" class="contact-label">Name</label>
-    <input type="text" name class="form-control" id="validationDefault02" placeholder="Arijit Maiti">
+    <input type="text" name class="form-control" id="validationDefault02" placeholder="Arijit Maiti" [(ngModel)]="name">
+    <p name class="errormsg text-red">{{ nameMsg }}</p>
 
-    <label lastName for="validationDefault02" class="contact-label">Email</label>
-    <input type="text" lastName class="form-control" id="validationDefault02" placeholder="xyz@gmail.com">
+    <label userName for="validationDefault02" class="contact-label">Email</label>
+    <input type="text" userName class="form-control" id="validationDefault02" placeholder="xyz@gmail.com" [(ngModel)]="email">
+    <p userName class="errormsg text-red">{{ mailMsg }}</p>
 
     <label for="validationDefault02" phoneNumber class="form-label">Phone Number</label>
-    <input type="text" phoneNumber class="form-control" id="validationDefault02" placeholder="+91 12345 67890">
+    <input type="text" phoneNumber class="form-control" id="validationDefault02" placeholder="+91 12345 67890" [(ngModel)]="number">
+    <p class="errormsg text-red" phoneNumber>{{ numMsg }}</p>
     
-    <label for="floatingTextarea2" msg>Message</label>
+    <label for="floatingTextarea2" msg>Message (optional)</label>
     <textarea class="form-control" msg placeholder="Write your queries..." id="floatingTextarea2" style="height: 150px"></textarea>
 
-    <button class="btns" submitButton>Submit</button>
+    <button class="btns" submitButton (click)="onInput($event)">Submit</button>
 </app-fromhome>
