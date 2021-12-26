@@ -10,12 +10,14 @@
     <input type="text" userName class="form-control" id="validationDefault02" placeholder="xyz@gmail.com" [(ngModel)]="email">
     <p userName class="errormsg text-red">{{ mailMsg }}</p>
 
-    <label for="validationDefault02" phoneNumber class="form-label">Phone Number</label>
+    <label for="validationDefault02" phoneNumber class="form-label contact-label">Phone Number</label>
     <input type="text" phoneNumber class="form-control" id="validationDefault02" placeholder="+91 12345 67890" [(ngModel)]="number">
     <p class="errormsg text-red" phoneNumber>{{ numMsg }}</p>
     
-    <label for="floatingTextarea2" msg>Message (optional)</label>
-    <textarea class="form-control" msg placeholder="Write your queries..." id="floatingTextarea2" style="height: 150px"></textarea>
+    <label for="floatingTextarea2 contact-label" msg>Message (optional)</label>
+    <textarea class="form-control mt-2" msg placeholder="Write your queries..." id="floatingTextarea2" style="height: 150px" (input)="changeText($event)"></textarea>
+    <span class="leftLtr" msg > {{dissplayMsg}} / 80</span>
+    <p class="errormsg text-red p-0 m-0" msg>{{ longTextmsg }}</p>
 
     <button class="btns" submitButton (click)="onInput($event)">Submit</button>
 </app-fromhome>

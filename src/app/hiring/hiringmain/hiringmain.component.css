@@ -2,8 +2,27 @@
     width: 100%;
 }
 .form-label{
-    color: var(--light-brown-text-color);
+    color: rgb(5, 108, 65);
 }
 .textbox{
     color: var(--faded-text-color);
+}
+.form-check a{
+    text-decoration: none;
+    color: var(--deep-font-color);
+}
+
+.text-red{
+    color: red;
+}
+.errormsg{
+    font-size: 14px;
+}
+.text-green{
+    color: rgb(13, 146, 13);
+    font-size: 18px;
+    font-weight: bold;
+}
+.hireBtn.dNone{
+    display: none;
 }

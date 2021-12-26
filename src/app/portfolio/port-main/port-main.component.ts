@@ -8,6 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class PortMainComponent implements OnInit {
   ValueText: any = 'all';
   displayDate: any;
+  CardsNum = 11;
+
+  LargeimageURL = '';
 
   IsDisplayed = false;
 
@@ -19,6 +22,16 @@ export class PortMainComponent implements OnInit {
     // console.log(c);
     this.displayDate = c;
   }  
+
+  optionClick(e: any){
+    let v = e.target.value;
+    this.ValueText = v;
+
+    setTimeout(() => {   
+      let Cards = document.querySelectorAll('.card');
+      this.CardsNum = Cards.length;
+    }, 10);
+  }
 
   PortfolioArray = [
     {
@@ -37,6 +50,12 @@ export class PortMainComponent implements OnInit {
       title: 'Fashion Ecommerce',
       url: 'assets/img/portEcomerce.png',
       desc: 'Created this clothes shop just for practicing purpose.',
+      category: 'bootstrap'
+    },
+    {
+      title: 'AC Store',
+      url: 'assets/img/electrico.png',
+      desc: 'An ecommerce website for selling air conditioners. Whole site, every single page made by me from scratch',
       category: 'bootstrap'
     },
     {
@@ -89,14 +108,15 @@ export class PortMainComponent implements OnInit {
     this.getDate()
   }
 
-  optionClick(e: any){
-    let v = e.target.value;
-    this.ValueText = v;
-    // console.log(this.ValueText);
-  }
-
   imgCross(){
     this.IsDisplayed = false;
   }
+
+  openPop(e: any){
+    this.IsDisplayed = true;
+    // console.log(e.srcElement.src);
+    this.LargeimageURL = e.srcElement.src;
+  }
+
 
 }

@@ -1,1 +1,6 @@
-<p>tc-main works!</p>
+<h3 class="LargeHeading">Terms & Conditions</h3>
+
+<div class="terBox" *ngFor="let item of tAndCArr">
+    <h6 class="text-muted mb-3 mt-4">{{item.LTitle}}</h6>
+    <p>{{item.LDesc}}</p>
+</div>

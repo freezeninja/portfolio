@@ -1,29 +1,34 @@
 <app-fromhome>
+
     <label name for="validationDefault02" class="form-label">First Name</label>
-    <input type="text" name class="form-control" id="validationDefault02" placeholder="Arijit">
+    <input type="text" name class="form-control" id="validationDefault02" placeholder="Arijit" [(ngModel)]="Fname">
+    <p name class="errormsg text-red">{{ firstNameMsg }}</p>
 
     <label lastName for="validationDefault02" class="form-label">Last Name</label>
-    <input type="text" lastName class="form-control" id="validationDefault02" placeholder="Maiti">
+    <input type="text" lastName class="form-control" id="validationDefault02" placeholder="Maiti" [(ngModel)]="Lname">
+    <p lastName class="errormsg text-red">{{ LastNameMsg }}</p>
 
     <label for="validationDefaultUsername" userName class="form-label">Email</label>
     <div class="input-group" userName>
         <span class="input-group-text" id="inputGroupPrepend2">@</span>
         <input type="text" class="form-control" id="validationDefaultUsername" aria-describedby="inputGroupPrepend2"
-            placeholder="xyz@gmail.com">
-    </div>
-
+            placeholder="xyz@gmail.com" [(ngModel)]="Hemail">
+        </div>
+        <p userName class="errormsg text-red">{{ EmailMsg }}</p>
+    
     <label for="validationDefault02" phoneNumber class="form-label">Phone Number</label>
-    <input type="text" phoneNumber class="form-control" id="validationDefault02" placeholder="+91 12345 67890">
+    <input type="text" phoneNumber class="form-control" id="validationDefault02" placeholder="+91 12345 67890" [(ngModel)]="Hnum">
+    <p phoneNumber class="errormsg text-red">{{ NumberMsg }}</p>
 
 
     <label for="validationDefault04" seclectboxProject class="form-label">Project For ~</label>
-    <select seclectboxProject class="form-select" id="validationDefault04">
+    <select seclectboxProject class="form-select" id="validationDefault04" [(ngModel)]="purpose">
         <option selected>Buisness Purpose</option>
         <option>Personal Purpose</option>
     </select>
 
     <label for="validationDefault04" slctBoxTech class="form-label">Prefered Technology ~</label>
-    <select slctBoxTech class="form-select" id="validationDefault04">
+    <select slctBoxTech class="form-select" id="validationDefault04" [(ngModel)]="tech">
         <option selected>Discuss on Call</option>
         <option>Angular</option>
         <option>React Js</option>
@@ -36,7 +41,7 @@
     <div class="price-from row" PriceRange>
         <div class="col-10">
             <input type="range" class="form-range" (change)="onPriceChange($event)" id="customRange1" min="1000"
-                max="95000">
+                max="95000" [(ngModel)]="price">
         </div>
         <div class="col-2">
             <output PriceRange>₹ {{ price }}</output>
@@ -48,11 +53,16 @@
     </div>
 
     <div class="form-check" AgreeTerm>
-        <input class="form-check-input" type="checkbox" value="" id="invalidCheck2">
+        <input class="form-check-input" type="checkbox" id="invalidCheck2" [(ngModel)]="isChecked">
         <label class="form-check-label" for="invalidCheck2">
-          Agree to terms and conditions
+          Agree to <span><a routerLink="/termsconditions" routerLinkActive="active"> Terms & Conditions</a></span>
         </label>
+        <p class="errormsg text-red">{{ CheckedMsg }}</p>
       </div>
 
-      <button class="hireBtn btns" type="submit" submitButton (click)="hireFSubmit($event)">Hire Now</button>
+
+      <p class="text-red text-center" bottomText>{{ toptext }}</p>
+
+      <button class="hireBtn btns" [ngClass]="{dNone: IsDisplayed}" type="submit" submitButton (click)="hireFSubmit($event)">Hire Now</button>
+      <p class="text-green text-center" succesTextHire>{{ succesText }}</p>
 </app-fromhome>

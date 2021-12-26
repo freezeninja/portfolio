@@ -10,3 +10,6 @@
 .p1{
     color: var(--deep-active-color);
 }
+.sidbarLinksRoute{
+    text-decoration: none;
+}

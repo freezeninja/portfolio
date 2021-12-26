@@ -1,5 +1,5 @@
 .contact-label{
-    color: rgb(15, 53, 85);
+    color: rgb(21, 89, 147);
 }
 .text-red{
     color: red;
@@ -11,4 +11,11 @@
     color: rgb(13, 146, 13);
     font-size: 20px;
     font-weight: bold;
+}
+.leftLtr{
+    font-size: 14px;
+    position: relative;
+    bottom: 1.8rem;
+    left: .6rem;
+    color: #556260;
 }
