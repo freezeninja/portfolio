@@ -1,13 +1,11 @@
-<div class="downloadBox mt-4">
-    <div class="DTEXT">
-        Wanna Know More About Me?
-    </div>
-    <div class="cv">
-        <a href="assets/pdf/arijitmaiti-web-developer.pdf" download="Arijit_CV">
-            <button class="downloadBtn">
-                <span>Download CV</span>
-                <img src="assets/img/download.png">
-            </button>
-        </a>
+<div class="WBox">
+    <div class="Workflow mt-5 mb-5">
+        <ul>
+            <li *ngFor="let item of liArr">
+                <div class="WContent">
+                    <h4 class="WHeading">{{ item.title }}</h4>
+                </div>
+            </li>
+        </ul>
     </div>
 </div>
