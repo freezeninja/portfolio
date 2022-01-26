@@ -30,7 +30,7 @@ export class PortMainComponent implements OnInit {
     setTimeout(() => {   
       let Cards = document.querySelectorAll('.card');
       this.CardsNum = Cards.length;
-    }, 10);
+    }, 0);
   }
 
   PortfolioArray = [
