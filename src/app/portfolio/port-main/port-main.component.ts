@@ -23,9 +23,9 @@ export class PortMainComponent implements OnInit {
     this.displayDate = c;
   }  
 
-  optionClick(e: any){
+  selectOp(e: any){
     let v = e.target.value;
-    this.ValueText = v;
+    this.ValueText = v;  
 
     setTimeout(() => {   
       let Cards = document.querySelectorAll('.card');
