@@ -108,7 +108,7 @@ export class PortMainComponent implements OnInit {
       url: 'assets/img/pocket_services.png',
       desc: 'Make QR Code , Bar code and many more thing within a minute',
       category: 'react',
-      src: 'https://textutil-umber.vercel.app/'
+      src: 'https://textutil-freezeninja1.vercel.app/'
     },
 
   ]
