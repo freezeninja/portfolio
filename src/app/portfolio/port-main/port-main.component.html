@@ -1,15 +1,17 @@
 <select class="form-select form-select-lg mb-3 mt-3" aria-label=".form-select-lg example" (change)="selectOp($event)">
     <option selected value="all">All</option>
+    <option value="react">React</option>
+    <option value="angular">Angular(2+)</option>
     <option value="bootstrap">Bootstrap</option>
     <option value="VJS">Vanilla Javascript</option>
-    <option value="angular">Angular(2+)</option>
     <option value="WEXL">Without External Library</option>
-  </select>
-  
-  <p class="m-3 p-3 text-muted showingResult">Showing Result of {{ CardsNum }} / 11</p>
+</select>
+
+<p class="m-3 p-3 text-muted showingResult">Showing Result of {{ CardsNum }} / 11</p>
 
 <div class="row imgRow">
-    <div class="card mb-3 me-3 col-lg-6 col-md-12 col-sm-12 m-3" style="max-width: 540px;" *ngFor="let img of PortfolioArray | filter:ValueText:'category'; let i = index">
+    <div class="card mb-3 me-3 col-lg-6 col-md-12 col-sm-12 m-3" style="max-width: 540px;"
+        *ngFor="let img of PortfolioArray | filter:ValueText:'category'; let i = index">
         <div class="row g-0">
             <div class="col-md-4">
                 <img [src]="img.url" class="img-fluid rounded-start portImg" (click)="openPop($event)">
@@ -20,20 +22,21 @@
                     <p class="card-text"> {{ img.desc }} </p>
                     <p class="card-text"><small class="text-muted">Last updated {{ displayDate }} day(s) ago</small></p>
                 </div>
-                <button class="btn-warning btn m-2 text-center">Visit to the actual site</button>
+                <button class="btn-warning link_btn btn m-2 text-center">
+                    <a [href]="img.src" target="_blank">Visit to the actual site</a>
+                </button>
                 <p class="card-text text-muted pb-2">Click on Image to Show in Full Screen</p>
             </div>
         </div>
     </div>
     <div class="popUpImg" [ngClass]="{displayed: IsDisplayed}">
-        <div class="PopUpImgContent mt-5">
+        <div class="PopUpImgContent mt-4">
             <div class="closeImg mb-3" (click)="imgCross()">
                 <img src="assets/img/close.png">
             </div>
             <div class="portimgLong">
-                <img [src]="LargeimageURL" class="img-fluid">
+                <img [src]="LargeimageURL">
             </div>
         </div>
     </div>
 </div>
-
